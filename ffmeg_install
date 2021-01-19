@@ -4,7 +4,7 @@ git clone --depth 1 https://code.videolan.org/videolan/x264 # download h264 libr
 cd x264 #change directory to the x264 folder
 ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl # configure installation
 
-make -j #create installation; using one core
+make -j4 #create installation; using one core
 sudo make install #install h264 library on system
 
 cd ~
