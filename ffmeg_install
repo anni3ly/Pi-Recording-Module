@@ -4,12 +4,12 @@ git clone --depth 1 https://code.videolan.org/videolan/x264 # download h264 libr
 cd x264 #change directory to the x264 folder
 ./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl # configure installation
 
-make -j #create installation; using one core
+make -j$(nproc) #create installation; using one core
 sudo make install #install h264 library on system
 
 cd ~
 git clone git://source.ffmpeg.org/ffmpeg --depth=1
 cd ffmpeg
 ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree
-make -j #this step will take a long time; allow to run overnight
+make -j$(nproc) #this step will take a long time; allow to run overnight
 sudo make install #install ffmpeg
