@@ -2,7 +2,7 @@ curl -L http://raw.github.com/pageauc/pi-timolo/master/source/pi-timolo-install.
 rclone config
 n
 picam
-storage> 12
+storage> 13
 client id>
 client_secret>
 scope> 1
