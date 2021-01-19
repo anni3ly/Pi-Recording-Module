@@ -1,0 +1,5 @@
+# This is a Unix script. It is meant to be run one line at a time in the command prompt.
+
+git clone --depth 1 https://code.videolan.org/videolan/x264 # download h264 library
+cd x264 #change directory to the x264 folder
+./configure --host=arm-unknown-linux-gnueabi --enale-static --disable-opencl # configure installation
