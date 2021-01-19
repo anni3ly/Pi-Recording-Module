@@ -10,5 +10,9 @@ root_folder_id>
 service_account_file>
 y/n> n
 y/n> n
+
+# After this point, I found the R-Pi Zero-W to be too slow to copy+paste the given link. 
+# I copied link into personal machine, then copied authentication code into R-Pi Zero-W terminal.
+
 y/n> n
 y/e/d> y
